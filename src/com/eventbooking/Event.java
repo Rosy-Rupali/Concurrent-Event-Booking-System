@@ -5,7 +5,7 @@ public class Event {
     private final int totalSeats;
 
     public Event(String eventName, int totalSeats) {
-        if(totalSeats <= 0){
+        if (totalSeats <= 0) {
             throw new IllegalArgumentException("Total seats must be positive");
         }
         this.eventName = eventName;
@@ -17,7 +17,7 @@ public class Event {
     }
 
     public int getTotalSeats() {
-       return totalSeats;
+        return totalSeats;
     }
 
     @Override

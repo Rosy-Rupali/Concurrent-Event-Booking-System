@@ -13,6 +13,7 @@ public class StatusMonitor implements Runnable{
     @Override
     public void run(){
         while (running){
+         //   System.out.println("Monitor system status: Booking service is active.");
             try{
                 Thread.sleep(intervalMillis);
             }catch(InterruptedException e){

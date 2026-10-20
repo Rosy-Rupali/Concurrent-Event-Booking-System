@@ -1,7 +1,7 @@
 package com.eventbooking;
 
-public class InvalidBookingException extends Exception{
-    public InvalidBookingException(String message){
+public class InvalidBookingException extends Exception {
+    public InvalidBookingException(String message) {
         super(message);
     }
 }

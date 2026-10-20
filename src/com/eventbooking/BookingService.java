@@ -39,7 +39,8 @@ public class BookingService {
     public Event getEvent() {
         return event;
     }
-    public int getBookedCount(){
+
+    public int getBookedCount() {
         return bookings.size();
     }
 

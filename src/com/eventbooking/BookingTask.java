@@ -1,6 +1,6 @@
 package com.eventbooking;
 
-public class BookingTask implements Runnable{
+public class BookingTask implements Runnable {
     private final BookingService bookingService;
     private final String customerName;
     private final int seatNumber;
@@ -15,11 +15,11 @@ public class BookingTask implements Runnable{
     public void run() {
         try {
             Booking booking = bookingService.bookSeat(customerName, seatNumber);
-            System.out.println("Booking is successful: "+booking);
-        }catch (InvalidBookingException e){
-            System.err.println("Booking failed for "+customerName+" because "+e.getMessage());
-        }finally {
-            System.out.println("Booking attempt ended for "+customerName);
+            System.out.println("Booking is successful: " + booking);
+        } catch (InvalidBookingException e) {
+            System.err.println("Booking failed for " + customerName + " because " + e.getMessage());
+        } finally {
+            System.out.println("Booking attempt ended for " + customerName);
         }
     }
 

@@ -124,7 +124,6 @@ public class SeatBookingApplication {
             Thread.currentThread().interrupt();
         }
 
-        // Final Summary Display (pulling data from the Event and BookingService)
         System.out.println("==================== BOOKING SUMMARY ====================");
         System.out.printf("Event: %s | Total: %d | Booked: %d | Remaining: %d%n",
                 bookingService.getEvent().getEventName(),
